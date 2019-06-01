@@ -141,7 +141,7 @@ body {
   margin-left: 10px;
   margin-right: 10px;
   color: purple;
-  background-color: rgb(145, 168, 44);
+  background-color: rgb(255, 255, 254);
 }
 
 h1,
@@ -248,13 +248,24 @@ footer {
 
 @media (max-width: 500px) {
   .navv {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: block;
   }
-  .navv .navi a {
-    flex-wrap: wrap;
+  .navv a {
+    padding: 20px;
+    display: block;
+    border-bottom: 1px solid black;
+    text-align: center;
+    filter: contrast(0);
   }
+  .navv2 {
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding: 20px;
+  }
+  .navv1 {
+    display: none;
+  }
+
   .he {
     display: flex;
     margin-top: 20px;
@@ -318,4 +329,7 @@ footer {
     text-align: center;
     margin-top: 50px;
   }
+}
+
+@media (max-width: 800px) {
 }
