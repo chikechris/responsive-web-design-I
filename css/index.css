@@ -138,7 +138,8 @@ body {
   height: 100%;
   font-family: "Titillium Web", sans-serif;
   margin-top: 10px;
-  margin-left: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
   color: purple;
   background-color: rgb(145, 168, 44);
 }
@@ -203,12 +204,7 @@ h5 {
   flex: 1;
 }
 .first-img {
-  width: 200px;
-  height: 200px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 40px;
+  flex: 1;
 }
 
 .content-one {
@@ -225,7 +221,7 @@ h5 {
 
 .middle-img {
   margin-top: 20px;
-  display: block;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
@@ -248,4 +244,78 @@ h5 {
 footer {
   text-align: center;
   margin-top: 50px;
+}
+
+@media (max-width: 500px) {
+  .navv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .navv .navi a {
+    flex-wrap: wrap;
+  }
+  .he {
+    display: flex;
+    margin-top: 20px;
+  }
+
+  .head {
+    margin-top: 20px;
+    padding: 20px;
+    flex: 1;
+  }
+  .head {
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .head button {
+    background-color: aqua;
+  }
+
+  .head1 {
+    display: none;
+  }
+
+  .content-one {
+    display: flex;
+    margin-bottom: 25px;
+    flex-direction: column;
+  }
+  .content-one h2 {
+    margin-top: 40px;
+    font-size: 20px;
+  }
+  .content-one p {
+    font-style: oblique;
+  }
+
+  .middle-img {
+    margin-top: 20px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+
+  .content-two {
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+  .content-two h3 {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+
+  .contact-infor {
+    margin-left: 10px;
+    margin-top: 40px;
+  }
+
+  footer {
+    text-align: center;
+    margin-top: 50px;
+  }
 }
