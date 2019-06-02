@@ -156,9 +156,9 @@ h5 {
 
 /*code starts here */
 .container {
-  width: 885px;
+  width: 890px;
   margin: 0 auto;
-  border: 3px rgb(255, 60, 0);
+  border: 3px rgb(73, 71, 70);
 }
 
 header {
@@ -214,14 +214,14 @@ header nav .img2 {
   margin-top: 5px;
   padding: 8px 50px;
   font-size: 18px;
-  border: 3px solid rgb(255, 30, 0);
+  border: 3px solid rgb(95, 92, 92);
   cursor: pointer;
 }
 
 /* media query for mobile phone */
 @media (max-width: 500px) {
   .container {
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-direction: column;
   }
@@ -230,6 +230,10 @@ header nav .img2 {
     flex-direction: column;
     align-items: center;
     margin-top: 30px;
+  }
+
+  header nav {
+    flex-direction: column;
   }
 
   header nav a {
@@ -245,7 +249,7 @@ header nav .img2 {
   .image1 {
     width: 100%;
     display: flex;
-    align-items: center;
+    text-align: center;
     justify-content: center;
     border-bottom: 2px solid rgb(71, 71, 83);
   }
@@ -259,10 +263,6 @@ header nav .img2 {
     display: none;
   }
 
-  header nav {
-    flex-direction: column;
-  }
-
   .content img {
     display: none;
   }
@@ -271,9 +271,6 @@ header nav .img2 {
     width: 100%;
   }
 
-  h1 {
-    margin: 25px 50px 20px 50px;
-  }
   .sub-content2 {
     margin: auto;
     flex-direction: column;
@@ -291,12 +288,12 @@ header nav .img2 {
 
   .content3 .text-content p {
     text-align: left;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
 
   footer p {
     text-align: center;
-    font-size: 18px;
+    font-size: 15px;
   }
 }
 /* media query mobile phone end */
@@ -308,6 +305,8 @@ header nav .img2 {
     width: 100%;
     display: flex;
     flex-direction: column;
+    margin-left: 20px;
+    margin-right: 10px;
   }
 
   header {
@@ -323,15 +322,16 @@ header nav .img2 {
   }
 
   .logo1 {
-    width: auto;
+    width: 100%;
     margin-bottom: 10px;
   }
-
-  header nav a {
+  header nav {
+    display: flex;
+    justify-content: space-evenly;
     flex-direction: row;
-    flex-basis: 100%;
+  }
+  header nav a {
     text-align: center;
-    margin: auto;
   }
   .logo {
     display: none;
@@ -370,7 +370,7 @@ header nav .img2 {
 
   footer p {
     text-align: center;
-    font-size: 18px;
+    font-size: 15px;
   }
 
   .content3 {
@@ -390,9 +390,10 @@ header .logo {
 }
 
 .content2 {
-  border-top: 3px solid blue;
+  border-top: 3px solid rgb(71, 71, 83);
   margin-top: 56px;
   padding-top: 30px;
+  border-bottom: 3px solid rgb(71, 71, 83);
 }
 
 .content2 .sub-content2t {
@@ -415,6 +416,7 @@ header .logo {
 
 .content3 {
   display: flex;
+  margin-bottom: 30px;
 }
 
 .text-content {
@@ -433,18 +435,11 @@ p {
 }
 
 .contact-info {
-  margin: auto;
-  margin-top: 57px;
-  border-top: 3px solid blue;
-  padding: 39px 10px 0;
-}
-
-.contact-info p {
-  margin: 25px 0;
+  margin-top: 30px;
 }
 
 footer {
   margin: 32px 0;
   text-align: center;
-  font-size: 12px;
+  font-size: 15px;
 }
