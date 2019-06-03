@@ -155,9 +155,10 @@ h5 {
 }
 
 /*code starts here */
+
 .container {
-  width: 890px;
-  margin: 0 auto;
+  width: 850px;
+  margin: auto;
   border: 3px rgb(73, 71, 70);
 }
 
@@ -218,98 +219,21 @@ header nav .img2 {
   cursor: pointer;
 }
 
-/* media query for mobile phone */
-@media (max-width: 500px) {
-  .container {
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-  }
-
-  header {
-    flex-direction: column;
-    align-items: center;
-    margin-top: 30px;
-  }
-
-  header nav {
-    flex-direction: column;
-  }
-
-  header nav a {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin-top: 25px;
-    margin-bottom: 20px;
-    border-bottom: 2px solid rgb(71, 71, 83);
-  }
-
-  .image1 {
-    width: 100%;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    border-bottom: 2px solid rgb(71, 71, 83);
-  }
-
-  .logo1 {
-    width: 170px;
-    margin-bottom: 25px;
-  }
-
-  .logo {
-    display: none;
-  }
-
-  .content img {
-    display: none;
-  }
-
-  .content2 .middle-img {
-    width: 100%;
-  }
-
-  .sub-content2 {
-    margin: auto;
-    flex-direction: column;
-  }
-  p {
-    text-align: left;
-    margin-bottom: 20px;
-  }
-
-  .content3 {
-    margin: auto;
-    display: block;
-    flex-direction: column;
-  }
-
-  .content3 .text-content p {
-    text-align: left;
-    margin-bottom: 40px;
-  }
-
-  footer p {
-    text-align: center;
-    font-size: 15px;
-  }
-}
-/* media query mobile phone end */
-
-/* media query tablet begin  */
+/*********************************/
 
 @media (min-width: 501px) and (max-width: 800px) {
   .container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin-left: 20px;
-    margin-right: 10px;
+    width: 770px;
+    margin: auto;
+    padding: auto;
   }
 
+  .container header {
+    display: flex;
+    flex-direction: column;
+  }
   header {
+    width: 770px;
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
@@ -326,9 +250,12 @@ header nav .img2 {
     margin-bottom: 10px;
   }
   header nav {
+    width: 770px;
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
+    padding-left: 15px;
+    margin: auto;
   }
   header nav a {
     text-align: center;
@@ -346,11 +273,23 @@ header nav .img2 {
     width: auto;
   }
 
-  h1 {
+  .content .content-text button {
+    width: 40%;
+    background: white;
+    vertical-align: top;
+    margin: auto;
+    padding: 8px 50px;
+    font-size: 18px;
+    border: 3px solid rgb(95, 92, 92);
+    cursor: pointer;
+  }
+
+  .content-text h1 {
     display: flex;
     align-content: center;
     margin: auto;
     width: auto;
+    margin-bottom: 25px;
   }
 
   .content img {
@@ -358,7 +297,7 @@ header nav .img2 {
   }
 
   .content2 .middle-img {
-    width: 100%;
+    width: 770px;
   }
   h3 {
     margin: 10px 15px 10px 10px;
@@ -379,7 +318,8 @@ header nav .img2 {
     margin: 10px 25px 10px 10px;
   }
 }
-/* media query tablet end */
+
+/* *************************** */
 
 header .logo {
   margin: 40px 0 0 50px;
@@ -442,4 +382,84 @@ footer {
   margin: 32px 0;
   text-align: center;
   font-size: 15px;
+}
+
+/* ******************************** */
+@media (max-width: 500px) {
+  .container {
+    width: 400px;
+    margin: 0 auto;
+    padding: 0 auto;
+  }
+
+  header {
+    width: 380px;
+    flex-direction: column;
+
+    align-items: center;
+    margin-top: 30px;
+  }
+
+  header nav {
+    width: 380px;
+    flex-direction: column;
+  }
+
+  header nav a {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid rgb(71, 71, 83);
+  }
+
+  .image1 {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    border-bottom: 2px solid rgb(71, 71, 83);
+  }
+
+  .logo1 {
+    width: 170px;
+    margin-bottom: 25px;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .content img {
+    display: none;
+  }
+
+  .content2 .middle-img {
+    width: 100%;
+  }
+
+  .sub-content2 {
+    margin: auto;
+    flex-direction: column;
+  }
+  p {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  .content3 {
+    margin: auto;
+    display: block;
+    flex-direction: column;
+  }
+
+  .content3 .text-content p {
+    text-align: left;
+    margin-bottom: 40px;
+  }
+
+  footer p {
+    text-align: center;
+    font-size: 15px;
+  }
 }
