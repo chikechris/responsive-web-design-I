@@ -174,7 +174,6 @@ header {
 header nav {
   width: 800px;
   display: flex;
-  /*justify-content: space-between;*/
   margin-top: 30px;
 }
 
@@ -223,7 +222,7 @@ header nav .img2 {
 
 @media (min-width: 501px) and (max-width: 800px) {
   .container {
-    width: 770px;
+    width: 775px;
     margin: auto;
     padding: auto;
   }
@@ -243,6 +242,7 @@ header nav .img2 {
   .image1 {
     display: block;
     align-items: center;
+    margin-bottom: 15px;
   }
 
   .logo1 {
@@ -256,6 +256,7 @@ header nav .img2 {
     flex-direction: row;
     padding-left: 15px;
     margin: auto;
+    margin-bottom: 20px;
   }
   header nav a {
     text-align: center;
@@ -298,6 +299,7 @@ header nav .img2 {
 
   .content2 .middle-img {
     width: 770px;
+    margin: auto;
   }
   h3 {
     margin: 10px 15px 10px 10px;
@@ -387,9 +389,9 @@ footer {
 /* ******************************** */
 @media (max-width: 500px) {
   .container {
-    width: 400px;
-    margin: 0 auto;
-    padding: 0 auto;
+    width: 420px;
+    margin: auto;
+    padding: auto;
   }
 
   header {
@@ -432,6 +434,14 @@ footer {
 
   .content img {
     display: none;
+  }
+
+  .content2 {
+    width: 380px;
+    border-top: 3px solid rgb(71, 71, 83);
+    margin-top: 56px;
+    padding-top: 30px;
+    border-bottom: 3px solid rgb(71, 71, 83);
   }
 
   .content2 .middle-img {
