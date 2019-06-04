@@ -155,7 +155,10 @@ h5 {
 }
 
 /*code starts here */
-
+body {
+  width: 1000px;
+  margin: auto;
+}
 .container {
   width: 850px;
   margin: auto;
@@ -221,6 +224,10 @@ header nav .img2 {
 /*********************************/
 
 @media (min-width: 501px) and (max-width: 800px) {
+  body {
+    width: 100%;
+    margin: auto;
+  }
   .container {
     width: 770px;
     margin: auto;
@@ -232,7 +239,7 @@ header nav .img2 {
     flex-direction: column;
   }
   header {
-    width: 770px;
+    width: 750px;
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
@@ -250,7 +257,7 @@ header nav .img2 {
     margin-bottom: 10px;
   }
   header nav {
-    width: 770px;
+    width: 750px;
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
@@ -395,14 +402,17 @@ footer {
 
 /* ******************************** */
 @media (max-width: 500px) {
-  .container {
-    width: 430px;
+  body {
+    width: 100%;
     margin: auto;
-    padding: auto;
+  }
+
+  .container {
+    width: 450px;
   }
 
   header {
-    width: 380px;
+    width: 450px;
     flex-direction: column;
 
     align-items: center;
@@ -410,7 +420,7 @@ footer {
   }
 
   header nav {
-    width: 380px;
+    width: 450px;
     flex-direction: column;
   }
 
@@ -420,6 +430,7 @@ footer {
     margin-top: 25px;
     margin-bottom: 20px;
     border-bottom: 2px solid rgb(71, 71, 83);
+    padding: 10px;
   }
 
   .image1 {
@@ -444,7 +455,7 @@ footer {
   }
 
   .content2 {
-    width: 380px;
+    width: 450px;
     border-top: 3px solid rgb(71, 71, 83);
     margin-top: 56px;
     padding-top: 30px;
